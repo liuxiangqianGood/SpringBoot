@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: a
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/userin?characterEncoding=utf-8
+      username: root
+      password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+    #端口号
+    port: 8090
